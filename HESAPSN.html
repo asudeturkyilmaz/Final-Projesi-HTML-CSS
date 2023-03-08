@@ -1,0 +1,55 @@
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Ana Sayfa</title>
+</head>
+
+<body>
+
+<script>
+
+
+var islem = prompt("Hangi islemi yapmak istersiniz?");
+
+
+
+function topla (){
+var a = prompt("İlk sayıyı girin");
+var b = prompt("İkinci sayıyı girin");
+var toplaSonuc = parseInt(a)+ parseInt(b);
+alert("Toplama islemin sonucu" +" "+ toplaSonuc);
+}
+function carp(){
+var a = prompt("İlk sayıyı girin");
+var b = prompt("İkinci sayıyı girin");
+var carpSonuc = parseInt(a) * parseInt(b);
+alert("Carpma isleminin sonucu" + " "+carpSonuc);
+}
+
+function bol(){
+var a = prompt("İlk sayıyı girin");
+var b = prompt("İkinci sayııy girin");
+var bolSonuc = parseInt(a) / parseInt(b);
+alert("Bolme isleminin sonucu" +" " +bolSonuc );
+}
+
+function cik(){
+var a = prompt("İlk sayıyı girin");
+var b = prompt("İkinci sayıyı girin");
+var cikSonuc = parseInt(a) - parseInt(b);
+alert("Cikarma isleminin sonucu:" +"  "+cikSonuc);
+
+}
+
+switch(islem){
+case "toplama":topla(); break;
+case "carpma":carp(); break;
+case "bolme":bol(); break;
+case "cikarma":cik(); break;
+
+}
+
+</script>
+</body>
+</html>
+

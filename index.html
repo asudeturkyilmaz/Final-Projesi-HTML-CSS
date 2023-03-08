@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>sayfabaşlğı</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="icon" href="favicon.jpg" type="image/x-icon" >
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+img.foto1{margin-left:500px;}
+p.hello{text-align:center;}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">menüyü kapat</a>
+  <div class="w3-container">
+    <img src="logo_1_istinye.png"  width="200" > 
+    <h3 class="w3-padding-64"><b>İstinye<br>Üniversitesi</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ana Sayfa</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hakkımızda</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">JS Örnekleri</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kadromuz</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">İletişim</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>İstinye Üniversitesi </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Bilişim Güvenliği Teknolojisi </b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Ana Sayfa</b></h1>
+    <hr style="width:50px;border:5px solid #0670ab;" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="cs.jpg" style="width:100%" onclick="onClick(this)" alt="üstünde">
+      <img src="cs1.jfif" style="width:100%" onclick="onClick(this)" alt="üstünde">
+      <img src="cs2.jpg" style="width:100%" onclick="onClick(this)" alt="üstünde">
+    </div>
+
+    <div class="w3-half">
+      <img src="cy1.webp" style="width:100%" onclick="onClick(this)" alt="üstünde">
+      <img src="cy2.jpg" style="width:100%" onclick="onClick(this)" alt="üstünde">
+      <img src="cy3.jpeg" style="width:100%" onclick="onClick(this)" alt="üstünde">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Hakkımızda</b></h1>
+    <hr style="width:50px;border:5px solid #0670ab;" class="w3-round">
+    <a href="https://www.instagram.com/isubilisimguvenligi/"><img class="foto1" src="insta.png"  width="80" height="80"></a>
+    <p class="hello" ><b >Neden Bu Programı Tercih Etmelisiniz?</b> <br>
+      Dijital bilgi gün geçtikçe artmaktadır ve bilginin kontrolünde dikkatli olunmazsa güvenlik zaafiyetine neden olabilecek bir çok adım bulunmaktadır. Dahası kötü niyetli kişilerce önemli gözüken bilgelere aktif bir şekilde saldırılar, manipülasyonlar uygulanmaya çalışılmaktadır. Bu bilgilerin güvenliğini sağlamak da bilişim güvenliği eğitimine sahip uzmanlarca sağlanmaktadır. Siz de bilişim güvenliğine ve bilişim güvenliğinin sağlanmasına odaklı bölümümüzü tercih ederek birçok kişiye dokunan dijital bilgilerin korunmasını sağlayıp insanlar için dijital dünyayı daha güvenli bir hale getirebilirsiniz.
+      <br><br>
+      <b >Neler Öğreneceksiniz?</b> <br>
+      Bilişim güvenliğine odaklı derslerinizle siber güvenlik, siber saldırı ve savunma yöntemleri, güvenlik duvarları, veritabanı güvenliği, web ve mobil platform güvenliğinin sağlanması, savunma algoritmaları, güvenli yazılım tasarlama ve geliştirme, ileri seviyede ağ güvenliğinin sağlanması, olay yönetimi, güvenlik ürünlerinin çeşitleri, etik sızma testi ve kriptografi konusunda bilgi sahibi olacaksınız. Bilişim güvenliğinin yanı sıra bilgisayar teknolojileri odaklı derslerle de temel yazılım tasarlama ve programlama, bilgisayar ağları, bilişim teknolojileri, açık kaynaklı işletim sistemleri, veri tabanı yönetimi, bulut bilişim sistemleri, web geliştirme, sunucu işletim sistemleri üzerine bilgi sahibi olabileceksiniz.
+      <br><br>
+      <b >Mezun Olunca Hangi İşleri Yapabilirsiniz? </b>
+      <br><br>
+      Bilişim güvenliği alanında bilgi güvenliği sistemlerinin analizi, tasarımı, denetlenmesi ve geliştirilmesinde rol alabilirsiniz. Dahası almış olduğunuz diğer bilişim dersleriyle de yazılım ve teknoloji alanında tasarım analiz ve geliştirme konusunda iş imkanlarını değerlendirebilirsiniz.
+      <br><br>
+      Çalışabileceğiniz kurum ve kuruluşlar arasında; kamu kurum ve kuruluşları, finans kurum ve kuruluşlarının bilgi işlem departmanları, eğitim kurumlarının bilgi işlem departmanları, sağlık hizmeti veren kurum ve kuruluşlar, yazılım ve donanım tasarım ve üretimi yapan kurum ve kuruluşlar, veri tabanı sistemleri geliştiren firmalar, uzaktan eğitim yapan kurum ve kuruluşlar da bulunmaktadır.
+      
+       
+      <bR><br>
+      <b >Eğitim Süreniz ve Mezuniyet Dereceniz:</b> <bR>
+      2 yıl, Önlisans
+      <br><br>
+      <b >Öğrenim Yeriniz:</b><br>
+      Topkapı Kampüsü
+      <br><bR>
+      <b >Eğitim Dilimi:</b> <br>
+      Türkçe
+      <br><br>
+      <b >Puan Türünüz ne Olmalıdır?</b><bR>
+      TYT
+      <br><br>
+      <b >Dikey Geçiş Sınavı Sonucunuza Göre;</b>
+      <br>
+      <ul type="">
+      
+      <li>Bilgisayar Bilimleri</li>
+      <li>Bilgisayar Mühendisliği,</li>
+      <li>Bilgisayar ve Öğretim Teknolojileri Öğretmenliği</li>
+      <li>Bilişim Sistemleri Mühendisliği</li>
+      <li>Bilişim Sistemleri ve Teknolojileri</li>
+      <li>Endüstri Mühendisliği</li>
+      <li>Fizik</li>
+      <li>Fizik Mühendisliği</li>
+      <li>İstatistik</li>
+      <li>İstatistik ve Bilgisayar Bilimleri</li>
+      <li>Kontrol ve Otomasyon Mühendisliği</li>
+      <li>Matematik ve Bilgisayar Bilimleri</li>
+      <li>Meteoroloji Mühendisliği</li>
+      <li>Uzay Mühendisliği</li>
+      <li>Yazılım Mühendisliği</li>
+      <li>Yönetim Bilişim Sistemleri</li>
+       
+      </ul>
+       </p>
+    
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Kadromuz</b></h1>
+    <hr style="width:50px;border:5px solid #0670ab;" class="w3-round">
+    <p>Bilişim Güvenliği Teknolojisi Programı Kadrosu</p>
+    
+    
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="keyvan.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Keyvan ARASTEH</h3>
+          <p class="w3-opacity">Öğretim Görevlisi</p>
+          <p>Araştırma Alanları: Cyber Security, Software Vulnerabilities</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="malek.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Malek Malkawi</h3>
+          <p class="w3-opacity">Öğretim Görevlisi</p>
+          <p>Araştırma Alanları: Cyber Security, Software Vulnerabilities</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="ramazan.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Ramazan Şen</h3>
+          <p class="w3-opacity">Öğretim Görevlisi</p>
+          <p>Araştırma Alanları: Web Tasarımı ve Programlama, Bilgi Güvenliği</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Javascript Örnekleri.</b></h1>
+    <hr style="width:50px;border:5px solid #0670ab" class="w3-round">
+    <p>Bu projelerden 5 tanesini yapınız ve bağlantı veriniz.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Kolay Gibiler</li>
+        <li class="w3-padding-16"><a href="rastgele.html" target="_blank">Rastgele sayı üretme uygulaması</a></li>
+        <li class="w3-padding-16"><a href="3ve5bolme.html" target="_blank">1-1000 arası 3e ve 5e bölünen sayıları listeleyen uygulama</a></li>
+        <li class="w3-padding-16"><a href="vizefinal.html" target="_blank">Vize finali hesaplayıp 50 finali en az 70 ortalama 50 üstü ile geçi değilse kaldı yazdıran uygulama</a> </li>
+        <li class="w3-padding-16"><a href="sayitek.html" target="_blank">Girilen sayı tek mi çift mi kontrol eden uygulama</a></li>
+        <li class="w3-padding-16"><a href="puannot.html" target="_blank">javascriptte puanınızı nota çeviren uygulamayı yapınız</a></li>
+        
+          
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Bi Tık</li>
+        <li class="w3-padding-16" > <a href="HESAPSN.html" target="_blank">Hesap makinesi yapnız </a> </li>
+        <li class="w3-padding-16"><a href="saat.html" target="_blank">Javascriptte saat gösteren uygulama </a></li>
+        <li class="w3-padding-16"><a href="HESAPSN.html" target="_blank">Butona ilk tıklandıktan sonraki tıklamalarda süre aralığı yazdıran program</a></li>
+        <li class="w3-padding-16"><a href="HESAPSN.html" target="_blank">Butona tıkladığında alttaki yazının rengini değiştiren program</a></li>
+        <li class="w3-padding-16"><a href="buyukharf.html" target="_blank">Javascript cümlenin baş harfini büyük yazdırma</a></li>
+        
+          
+      
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>İletişim</b></h1>
+    <hr style="width:50px;border:5px solid #0670ab" class="w3-round">
+    <p>Bizimle iletişime geçmek için lütfen aşağıdaki formu doldurunuz. Merak etmeyin biz sizi ararız. :) </p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>İsim</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>E-posta</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Söylemek istedikleriniz</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Gönder Gelsin</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Yaptı da kim? <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Galiba gibi  <script language="javascript" src="http://ir.sitekodlari.com/ipadresi1.js"></script></a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

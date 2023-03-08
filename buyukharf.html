@@ -1,0 +1,19 @@
+
+<html>
+<head>
+<title> selam
+</title>
+</head>
+<body>
+
+<script type="text/javascript">
+function kCap(iO){
+iO.value = iO.value.replace(/([\wöçşğüıİ])/gi, 
+function(a, b){return b.replace("I","ı").toLowerCase()}).replace(/(^[a-zöçşğüı]|[\s|\.][a-zöçşğüı])/g, 
+function(c, d){return d.replace("i","İ").toUpperCase()});
+}
+</script>
+<input type="text" value="" size="50" id="metin" onblur="kCap(this);" >
+
+</body>
+</html>
